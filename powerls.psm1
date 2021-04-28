@@ -1,46 +1,3 @@
-# Configure-PowerShell
-
-Para configurar o POWER SHELL faça a instalação do POSH-GIT 
-https://github.com/dahlbyk/posh-git
-
-
-Após essa instalação execute o comando: OBS = Precisa ter o VSCODE INSTALADO para executar o comando "CODE"
-
-`code  $profile.CurrentUserCurrentHost`
-
-
-Cole as informações abaixo dentro do arquivo que será aberto.
-```bash
-# Limpando Console
-Clear-Host
-
-# Importando módulos
-Import-Module posh-git
-Import-Module PSReadLine
-
-# Autocomplete - Teclas de atalho
-Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
-Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
-Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward  
-# Set-PSReadLineKeyHandler -Key Tab -Function Complete
-
-# autocomplete - Funcionamento
-Set-PSReadLineOption -ShowToolTips;
-Set-PSReadLineOption -HistoryNoDuplicates;
-Set-PSReadLineOption -PredictionSource History;
-
-$ROOT = Split-Path -Parent $MyInvocation.MyCommand.Path
-
-# Sobrescrevendo a função ls
-Import-Module $ROOT\Scripts\powerls.psm1
-Set-Alias -Name ls -Value PowerLS -Option AllScope
-```
-
-Instale o PSReadLine no link : https://github.com/PowerShell/PSReadLine
-
-Apos isso dê um ```echo $ROOT``` no seu terminal, abra o caminho. Abra a pasta SCRIPT e crie um arquivo com o nome powerls.psm1 após isso entre no arquivo que foi criado e cole o seguinte código:
-
-```
 # Copiei de https://github.com/JRJurman/PowerLS
 # Só alterei a cor dos 'normal files'
 
@@ -125,6 +82,3 @@ function PowerLS {
   }
   
   export-modulemember -function PowerLS
-  
-```
-PRONTO seu terminal está configurado.
