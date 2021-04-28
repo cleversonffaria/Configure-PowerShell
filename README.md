@@ -1,15 +1,17 @@
 # Configure-PowerShell
 
-Para configurar o POWER SHELL faça a instalação do POSH-GIT 
-https://github.com/dahlbyk/posh-git
+- Para configurar o POWER SHELL faça a instalação do [POSH-GIT](https://github.com/dahlbyk/posh-git)
 
 
-Após essa instalação execute o comando: OBS = Precisa ter o VSCODE INSTALADO para executar o comando "CODE"
+- Após essa instalação execute o comando no terminal:
 
 `code  $profile.CurrentUserCurrentHost`
 
+> Precisa ter o VSCODE INSTALADO para executar o comando "code" no terminal.
 
-Cole as informações abaixo dentro do arquivo que será aberto.
+
+- Cole as informações abaixo dentro do arquivo que será aberto.
+> Não esqueça de deixar a linha 1 vazia.
 ```bash
 # Limpando Console
 Clear-Host
@@ -36,9 +38,11 @@ Import-Module $ROOT\Scripts\powerls.psm1
 Set-Alias -Name ls -Value PowerLS -Option AllScope
 ```
 
-Instale o PSReadLine no link : https://github.com/PowerShell/PSReadLine
+- Instale o [PSReadLine](https://github.com/PowerShell/PSReadLine)
 
-Apos isso dê um ```echo $ROOT``` no seu terminal, abra o caminho. Abra a pasta SCRIPT e crie um arquivo com o nome powerls.psm1 após isso entre no arquivo que foi criado e cole o seguinte código:
+- Apos isso dê um ```echo $ROOT``` no seu terminal, abra o caminho. 
+- Abra a pasta SCRIPT e crie um arquivo com o nome powerls.psm1 
+- após isso entre no arquivo que foi criado e cole o seguinte código:
 
 ```
 # Copiei de https://github.com/JRJurman/PowerLS
@@ -127,4 +131,5 @@ function PowerLS {
   export-modulemember -function PowerLS
   
 ```
+
 PRONTO seu terminal está configurado.
