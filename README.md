@@ -1,8 +1,9 @@
 # Configure-PowerShell
 
 - Para configurar o POWER SHELL faça a instalação do [POSH-GIT](https://github.com/dahlbyk/posh-git)
-Comando:
-PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
+
+`code Comando:
+ PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force`
 
 
 - Após essa instalação execute o comando no terminal:
