@@ -43,6 +43,12 @@ Set-Alias -Name ls -Value PowerLS -Option AllScope
 
 - Instale o [PSReadLine](https://github.com/PowerShell/PSReadLine)
 
+```
+Install-Module -Name PowerShellGet -Force
+
+```
+
+
 - Apos isso dê um ```echo $ROOT``` no seu terminal, abra o caminho. 
 - Abra a pasta SCRIPT e crie um arquivo com o nome powerls.psm1 
 - após isso entre no arquivo que foi criado e cole o seguinte código:
