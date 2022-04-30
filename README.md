@@ -44,7 +44,7 @@ Set-Alias -Name ls -Value PowerLS -Option AllScope
 - Instale o [PSReadLine](https://github.com/PowerShell/PSReadLine)
 
 ```
-Install-Module -Name PowerShellGet -Force
+Install-Module PSReadLine -AllowPrerelease -Force
 
 ```
 
