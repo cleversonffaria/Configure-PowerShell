@@ -2,7 +2,7 @@
 
 - Para configurar o POWER SHELL faça a instalação do [POSH-GIT](https://github.com/dahlbyk/posh-git)
 
-`code Comando:
+`comando de instalação:
  PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force`
 
 
